@@ -4,7 +4,7 @@ set -e
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 ZIP_TARGET_DIR=${DIR}/target
-HF_BUILD_DIR=${DIR}/core/cmd/hoverfly
+HF_BUILD_DIR=${DIR}/cmd/hoverfly
 HCTL_BUILD_DIR=${DIR}/hoverctl
 LICENSE=${DIR}/LICENSE
 GOX="${GOPATH}/bin/gox"

@@ -7,7 +7,7 @@ hoverctl-test:
 	go test -v $$(go list ./... | grep -v -E 'vendor')
 
 hoverfly-build: hoverfly-test
-	cd core/cmd/hoverfly && \
+	cd cmd/hoverfly && \
 	go build -o ../../../target/hoverfly
 
 hoverctl-build: hoverctl-test
@@ -27,7 +27,7 @@ hoverctl-functional-test:
 test: hoverfly-functional-test hoverctl-test hoverctl-functional-test
 
 build:
-	cd core/cmd/hoverfly && \
+	cd cmd/hoverfly && \
 	go build -o ../../../target/hoverfly
 
 	cd hoverctl && \
